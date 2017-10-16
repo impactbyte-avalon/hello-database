@@ -4,7 +4,9 @@
   "description": "Hello Database",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'HELLO NODE'",
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,11 @@
   },
   "homepage": "https://github.com/mhaidarh/hello-database#readme",
   "dependencies": {
+    "express": "4.16.2",
+    "request": "2.83.0",
     "sqlite3": "3.1.13"
+  },
+  "devDependencies": {
+    "nodemon": "1.12.1"
   }
 }
