@@ -1,7 +1,5 @@
-const sqlite3 = require("sqlite3").verbose()
-const db = new sqlite3.Database("./socialmedia.db")
-
-const query = `
+const insert = db => {
+  const query = `
 INSERT INTO users (username, email, password, name, bio) VALUES
   ("admin", "admin@profezzi.com", "supersecret1", "Administrator", "Superman"),
   ("mhaidarh", "me@mhaidaranif.com", "supersecret1", "M Haidar Hanif", "Educator"),
@@ -11,10 +9,11 @@ INSERT INTO users (username, email, password, name, bio) VALUES
   ("binar","admin@binar.id", "supersecret5", "Binar Academy", "Coding Bootcamp");
 `
 
-db.serialize(function() {
-  var statement = db.prepare(query)
-  statement.run()
-  statement.finalize()
-})
+  db.serialize(function() {
+    var statement = db.prepare(query)
+    statement.run()
+    statement.finalize()
+  })
+}
 
-db.close()
+module.exports = insert
