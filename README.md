@@ -1,33 +1,44 @@
 # Hello Database
 
---------------------------------------------------------------------------------
+Experimenting with relational and SQL database.
 
-## Requirements
+## Database Schema
 
-Start experimenting with database like SQL. Example: MySQL, PostgreSQL, SQLite
+### User
 
-### Input
+field    | type    | size
+---------|---------|-----
+id       | integer | -
+username | string  | 20
+email    | string  | 100
+password | string  | 50
+fullName | string  | 50
+bio      | text    | -
 
-- Various data you already have in your program
+Examples:
 
-### Process
+```
+id: 1
+username: "mhaidarh"
+email: "me@mhaidarhanif.com"
+password: "supersecret0"
+fullName: "M Haidar Hanif"
+bio: "Educator of Impact Byte"
+```
 
-- Modeling those data to conform with better schema in SQL database
+```
+id: 2
+username: "impactbyte"
+email: "admin@impactbyte.com"
+password: "supersecret1"
+fullName: "Impact Byte"
+bio: "Educator of Impact Byte"
+```
 
-### Output
+### Posts
 
-- Better data model
-
---------------------------------------------------------------------------------
-
-## Level 0
-
-- Install one or more database management system (DBMS)
-- Try to connect those via your terminal
-
---------------------------------------------------------------------------------
-
-## Level 1
-
-- Prepare your program to be used with the new data source
-- Connect your program with that data source
+| field    | type    | size
+|----------|---------|-----
+| id       | integer | -
+| userId   | integer | -
+| content  | string  | 140
