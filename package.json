@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mhaidarh/hello-database/issues"
   },
-  "homepage": "https://github.com/mhaidarh/hello-database#readme"
+  "homepage": "https://github.com/mhaidarh/hello-database#readme",
+  "dependencies": {
+    "sqlite3": "3.1.13"
+  }
 }
