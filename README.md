@@ -12,28 +12,21 @@ id       | integer | -
 username | string  | 20
 email    | string  | 100
 password | string  | 50
-fullName | string  | 50
+name     | string  | 50
 bio      | text    | -
 
-Examples:
+#### Examples in Table
 
-```
-id: 1
-username: "mhaidarh"
-email: "me@mhaidarhanif.com"
-password: "supersecret0"
-fullName: "M Haidar Hanif"
-bio: "Educator of Impact Byte"
-```
+id | username | email | password | name | bio
+---|----------|-------|----------|------|----
+0  | admin      | admin@profezzi.com   | supersecret1 | Administrator  | Superman
+1  | mhaidarh   | me@mhaidaranif.com   | supersecret1 | M Haidar Hanif | Educator
+2  | impactbyte | admin@impactbyte.com | supersecret2 | Impact Byte    | Coding Bootcamp
+3  | hacktiv8   | admin@hacktiv8.com   | supersecret3 | Hacktiv8       | Coding Bootcamp
+4  | refactory  | admin@refactory.com  | supersecret4 | Refactory.id   | Coding Bootcamp
+5  | binar      | admin@binar.id       | supersecret5 | Binar Academy  | Coding Bootcamp
 
-```
-id: 2
-username: "impactbyte"
-email: "admin@impactbyte.com"
-password: "supersecret1"
-fullName: "Impact Byte"
-bio: "Educator of Impact Byte"
-```
+--------------------------------------------------------------------------------
 
 ### `Posts`
 
