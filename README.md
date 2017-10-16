@@ -4,7 +4,7 @@ Experimenting with relational and SQL database.
 
 ## Database Schema
 
-### User
+### `Users`
 
 field    | type    | size
 ---------|---------|-----
@@ -35,7 +35,7 @@ fullName: "Impact Byte"
 bio: "Educator of Impact Byte"
 ```
 
-### Posts
+### `Posts`
 
 | field    | type    | size
 |----------|---------|-----
