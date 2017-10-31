@@ -1,33 +1,37 @@
 # Hello Database
 
+Experimenting with relational and SQL database.
+
+## Database Schema
+
+### `Users`
+
+field    | type    | size
+---------|---------|-----
+id       | integer | -
+username | string  | 20
+email    | string  | 100
+password | string  | 50
+name     | string  | 50
+bio      | text    | -
+
+#### Examples in Table
+
+id | username | email | password | name | bio
+---|----------|-------|----------|------|----
+0  | admin      | admin@profezzi.com   | supersecret1 | Administrator  | Superman
+1  | mhaidarh   | me@mhaidaranif.com   | supersecret1 | M Haidar Hanif | Educator
+2  | impactbyte | admin@impactbyte.com | supersecret2 | Impact Byte    | Coding Bootcamp
+3  | hacktiv8   | admin@hacktiv8.com   | supersecret3 | Hacktiv8       | Coding Bootcamp
+4  | refactory  | admin@refactory.com  | supersecret4 | Refactory.id   | Coding Bootcamp
+5  | binar      | admin@binar.id       | supersecret5 | Binar Academy  | Coding Bootcamp
+
 --------------------------------------------------------------------------------
 
-## Requirements
+### `Posts`
 
-Start experimenting with database like SQL. Example: MySQL, PostgreSQL, SQLite
-
-### Input
-
-- Various data you already have in your program
-
-### Process
-
-- Modeling those data to conform with better schema in SQL database
-
-### Output
-
-- Better data model
-
---------------------------------------------------------------------------------
-
-## Level 0
-
-- Install one or more database management system (DBMS)
-- Try to connect those via your terminal
-
---------------------------------------------------------------------------------
-
-## Level 1
-
-- Prepare your program to be used with the new data source
-- Connect your program with that data source
+| field    | type    | size
+|----------|---------|-----
+| id       | integer | -
+| userId   | integer | -
+| content  | string  | 140
